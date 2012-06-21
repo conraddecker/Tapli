@@ -1,0 +1,9 @@
+<% if @bars.any? %>
+  <ul>
+    <% @bars.each do |bar| %>
+      <li><%= link_to bar.name, bar %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= link_to "Add a bar", new_bar_path %>
